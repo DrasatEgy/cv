@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية | أحمد صلاح القاضي</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Tajawal) -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1e3a8a', // blue-900
+                        secondary: '#0ea5e9', // sky-500
+                        accent: '#f59e0b', // amber-500
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #f8fafc;
+        }
+        
+        /* Accordion transition classes */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+        }
+        
+        .accordion-content.expanded {
+            /* Max height will be set via JS, this is a fallback */
+            max-height: 1000px; 
+            padding-bottom: 1.5rem;
+        }
+
+        .rotate-180 {
+            transform: rotate(180deg);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        
+        /* Glassmorphism effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-secondary selection:text-white">
+
+    <!-- Header / Hero Section -->
+    <header class="relative bg-gradient-to-r from-primary to-slate-800 text-white overflow-hidden shadow-2xl">
+        <!-- Background decorative elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-secondary opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-accent opacity-20 blur-3xl"></div>
+        
+        <div class="container mx-auto px-6 py-16 relative z-10">
+            <div class="flex flex-col items-center md:items-start text-center md:text-right">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight drop-shadow-md">أحمد صلاح القاضي</h1>
+                <p class="text-xl md:text-2xl text-sky-200 font-medium mb-2">مدير فرع الأكاديمية المهنية للمعلمين بالإسكندرية</p>
+                <p class="text-md md:text-lg text-slate-300 max-w-3xl leading-relaxed mb-8">
+                    مدرب تربوي وتكنولوجيا تعليم | خبير تكنولوجيا المعلومات والاتصالات | مصمم تعليمي | باحث ماجستير في الملكية الفكرية وإدارة الإبداع
+                </p>
+                
+                <!-- Contact Badges -->
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="tel:01019380881" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition duration-300 text-sm md:text-base border border-white/20 backdrop-blur-sm">
+                        <i class="fas fa-phone-alt text-secondary"></i> 01019380881
+                    </a>
+                    <a href="mailto:ahmedsalahkady@gmail.com" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition duration-300 text-sm md:text-base border border-white/20 backdrop-blur-sm">
+                        <i class="fas fa-envelope text-secondary"></i> ahmedsalahkady@gmail.com
+                    </a>
+                    <a href="mailto:alex.manager@pat.edu.eg" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition duration-300 text-sm md:text-base border border-white/20 backdrop-blur-sm">
+                        <i class="fas fa-envelope text-secondary"></i> alex.manager@pat.edu.eg
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container mx-auto px-4 md:px-6 py-12 -mt-10 relative z-20">
+        
+        <!-- Summary Section -->
+        <section class="glass-card rounded-2xl shadow-lg p-6 md:p-8 mb-12 border-t-4 border-secondary">
+            <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+                <i class="fas fa-user-tie text-secondary"></i> الملخص المهني
+            </h2>
+            <p class="text-lg text-slate-700 leading-relaxed">
+                خبرة تمتد لأكثر من ثلاثة عقود في مجالات التدريس، التدريب، التصميم التعليمي، وتوظيف التكنولوجيا في التعليم. متخصص في دمج التقنيات الحديثة في العملية التعليمية، وتصميم المحتوى الرقمي التفاعلي، وتمكين المعلمين والطلاب من مهارات القرن الحادي والعشرين والتعلم النشط. أمتلك رؤية قيادية في إدارة العمليات التعليمية والتدريبية والتحول الرقمي وتطوير بيئات التعلم.
+            </p>
+        </section>
+
+        <!-- Career Path (Interactive Cards / Accordions) -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-primary mb-8 flex items-center gap-3 border-b-2 border-slate-200 pb-4">
+                <i class="fas fa-road text-secondary"></i> مساري المهني – خبرات متعددة الأدوار
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+                    <button class="w-full text-right px-6 py-5 flex justify-between items-center focus:outline-none bg-slate-50 group-hover:bg-blue-50 transition-colors" onclick="toggleAccordion('content-1', 'icon-1')">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-lg font-bold text-lg shadow-inner shrink-0">01</div>
+                            <div class="text-right">
+                                <h3 class="font-bold text-xl text-slate-800 group-hover:text-primary transition-colors">معلم – ممارس تعليم معزز بالتكنولوجيا</h3>
+                                <span class="inline-block mt-1 bg-slate-200 text-slate-600 text-xs px-2 py-1 rounded-full font-bold">1995 - 2018</span>
+                            </div>
+                        </div>
+                        <i id="icon-1" class="fas fa-chevron-down text-slate-400 transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div id="content-1" class="accordion-content bg-white px-6">
+                        <ul class="list-none space-y-3 pt-2 text-slate-600">
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> دمج التكنولوجيا في تدريس الدراسات الاجتماعية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تصميم أنشطة تعلم تفاعلية قائمة على التعلم النشط.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> توظيف التعلم القائم على المشروعات (PBL) والاستقصاء الرقمي.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> استخدام التابلت والسبورة التفاعلية والتقويم الرقمي.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> إنتاج فيديوهات ومواد تعليمية رقمية تفاعلية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تنمية مهارات التفكير العليا والتفكير الناقد والإبداعي لدى الطلاب.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> استخدام المنصات الرقمية والتعلم عن بعد والتعاون عبر الإنترنت.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تدريب الطلاب على البحث واستخدام المصادر الرقمية بأمان وفاعلية.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+                    <button class="w-full text-right px-6 py-5 flex justify-between items-center focus:outline-none bg-slate-50 group-hover:bg-blue-50 transition-colors" onclick="toggleAccordion('content-2', 'icon-2')">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-lg font-bold text-lg shadow-inner shrink-0">02</div>
+                            <div class="text-right">
+                                <h3 class="font-bold text-xl text-slate-800 group-hover:text-primary transition-colors">مدرب – تطوير مهني للمعلمين</h3>
+                                <span class="inline-block mt-1 bg-secondary/10 text-secondary text-xs px-2 py-1 rounded-full font-bold">2016 - حتى الآن</span>
+                            </div>
+                        </div>
+                        <i id="icon-2" class="fas fa-chevron-down text-slate-400 transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div id="content-2" class="accordion-content bg-white px-6">
+                        <ul class="list-none space-y-3 pt-2 text-slate-600">
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تدريب المعلمين على دمج التكنولوجيا في التعليم واستراتيجيات التعلم النشط.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تدريب على استخدام التابلت والسبورة التفاعلية والمنصات الرقمية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تنفيذ ورش عمل في مهارات التفكير والإبداع والتقويم الإلكتروني.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> التدريب على Microsoft ICT وأدوات التعليم الحديثة.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> <strong class="text-slate-700">مدرب أونلاين</strong> لبرامج الأكاديمية المهنية للمعلمين الموجهة.</li>
+                        </ul>
+                        <div class="mt-4 p-3 bg-slate-50 rounded-lg border border-slate-200">
+                            <span class="font-bold text-primary block mb-2">مدرب دولي معتمد للبرامج التالية:</span>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <span class="bg-white px-2 py-1 rounded text-sm shadow-sm border border-slate-100 flex items-center gap-1"><i class="fas fa-star text-accent text-xs"></i> ديسكفري إديوكيشن (Discovery Education)</span>
+                                <span class="bg-white px-2 py-1 rounded text-sm shadow-sm border border-slate-100 flex items-center gap-1"><i class="fas fa-star text-accent text-xs"></i> مايكروسوفت (Microsoft)</span>
+                                <span class="bg-white px-2 py-1 rounded text-sm shadow-sm border border-slate-100 flex items-center gap-1"><i class="fas fa-star text-accent text-xs"></i> إنتل (Intel)</span>
+                            </div>
+                            <span class="font-bold text-primary block mb-2 mt-3">مؤسسات التدريب والشراكات:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-white px-2 py-1 rounded text-sm shadow-sm border border-slate-100">كلية التربية – جامعة الإسكندرية</span>
+                                <span class="bg-white px-2 py-1 rounded text-sm shadow-sm border border-slate-100">منصة دمياط</span>
+                                <span class="bg-white px-2 py-1 rounded text-sm shadow-sm border border-slate-100">الأكاديمية المهنية للمعلمين</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+                    <button class="w-full text-right px-6 py-5 flex justify-between items-center focus:outline-none bg-slate-50 group-hover:bg-blue-50 transition-colors" onclick="toggleAccordion('content-3', 'icon-3')">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-lg font-bold text-lg shadow-inner shrink-0">03</div>
+                            <div class="text-right">
+                                <h3 class="font-bold text-xl text-slate-800 group-hover:text-primary transition-colors">مُعد حقائب ومطور برامج تدريبية</h3>
+                                <span class="inline-block mt-1 bg-secondary/10 text-secondary text-xs px-2 py-1 rounded-full font-bold">2019 - حتى الآن</span>
+                            </div>
+                        </div>
+                        <i id="icon-3" class="fas fa-chevron-down text-slate-400 transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div id="content-3" class="accordion-content bg-white px-6">
+                        <ul class="list-none space-y-3 pt-2 text-slate-600">
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تحليل الاحتياجات التدريبية وتصميم البرامج التدريبية المتكاملة.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> إعداد الحقائب التدريبية والمواد المساندة وأوراق العمل.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تصميم الأنشطة والتقويم والأدوات القياسية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> إعداد الاختبارات وأدوات التقويم الإلكترونية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> إنتاج محتوى رقمي تفاعلي عالي الجودة لبيئات حضورية، إلكترونية وهجينة.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> <strong class="text-slate-700">محكم حقائب تدريبية:</strong> مراجعة وتقييم جودة الحقائب التدريبية.</li>
+                        </ul>
+                        <div class="mt-4 p-3 bg-slate-50 rounded-lg text-sm text-slate-700">
+                            <strong>الجهات المستفيدة:</strong> مديرية التربية والتعليم - وزارة الاتصالات وتكنولوجيا المعلومات - الأكاديمية المهنية للمعلمين.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+                    <button class="w-full text-right px-6 py-5 flex justify-between items-center focus:outline-none bg-slate-50 group-hover:bg-blue-50 transition-colors" onclick="toggleAccordion('content-4', 'icon-4')">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-lg font-bold text-lg shadow-inner shrink-0">04</div>
+                            <div class="text-right">
+                                <h3 class="font-bold text-xl text-slate-800 group-hover:text-primary transition-colors">مصمم تعليمي – تصميم التعلم الرقمي</h3>
+                                <span class="inline-block mt-1 bg-secondary/10 text-secondary text-xs px-2 py-1 rounded-full font-bold">2010 - حتى الآن</span>
+                            </div>
+                        </div>
+                        <i id="icon-4" class="fas fa-chevron-down text-slate-400 transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div id="content-4" class="accordion-content bg-white px-6">
+                        <ul class="list-none space-y-3 pt-2 text-slate-600">
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تصميم التعلم الإلكتروني والمحتوى التفاعلي وفق نماذج التصميم التعليمي.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> بناء السيناريوهات التعليمية والمسارات التدريبية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تصميم الاختبارات الإلكترونية والأنشطة التفاعلية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> إنتاج الفيديوهات التعليمية والشرح التفاعلي.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تحويل المحتوى التقليدي إلى محتوى رقمي تفاعلي.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تصميم بيئات تعلم مرنة (حضوري – إلكتروني – مدمج).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+                    <button class="w-full text-right px-6 py-5 flex justify-between items-center focus:outline-none bg-slate-50 group-hover:bg-blue-50 transition-colors" onclick="toggleAccordion('content-5', 'icon-5')">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-lg font-bold text-lg shadow-inner shrink-0">05</div>
+                            <div class="text-right">
+                                <h3 class="font-bold text-xl text-slate-800 group-hover:text-primary transition-colors">خبير تكنولوجيا التعليم و ICT</h3>
+                                <span class="inline-block mt-1 bg-secondary/10 text-secondary text-xs px-2 py-1 rounded-full font-bold">2016 - حتى الآن</span>
+                            </div>
+                        </div>
+                        <i id="icon-5" class="fas fa-chevron-down text-slate-400 transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div id="content-5" class="accordion-content bg-white px-6">
+                        <ul class="list-none space-y-3 pt-2 text-slate-600">
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> دمج التكنولوجيا في النظم التعليمية وإدارة التعلم الإلكتروني.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تصميم حلول التعلم الإلكتروني المتكاملة وتطبيقات الأجهزة الذكية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> إدارة منصات التعلم (LMS) والفصول الافتراضية والتعلم عن بعد.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> توظيف التقنيات الناشئة (AR) – التفاعل – الذكاء الاصطناعي في التعليم.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تطوير المحتوى الرقمي والتقويم الإلكتروني والأمن الرقمي.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+                    <button class="w-full text-right px-6 py-5 flex justify-between items-center focus:outline-none bg-slate-50 group-hover:bg-blue-50 transition-colors" onclick="toggleAccordion('content-6', 'icon-6')">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-lg font-bold text-lg shadow-inner shrink-0">06</div>
+                            <div class="text-right">
+                                <h3 class="font-bold text-xl text-slate-800 group-hover:text-primary transition-colors">قيادة تعليمية – مدير فرع الأكاديمية</h3>
+                                <span class="inline-block mt-1 bg-secondary/10 text-secondary text-xs px-2 py-1 rounded-full font-bold">2021 - حتى الآن</span>
+                            </div>
+                        </div>
+                        <i id="icon-6" class="fas fa-chevron-down text-slate-400 transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div id="content-6" class="accordion-content bg-white px-6">
+                        <ul class="list-none space-y-3 pt-2 text-slate-600">
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> إدارة العمليات التعليمية والتدريبية والاختبارات وخدمات المعلمين.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> الإشراف على المنصات الإلكترونية ونظم الحجز والاختبارات.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تحسين الإجراءات وتحقيق التحول الرقمي وصناعة القرار المبني على البيانات.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> بناء فرق عمل فعالة وتنمية قدرات الكوادر البشرية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> <strong class="text-slate-700">محكم مسابقة "معلم مبتكر من أجل الغد"</strong> بالتعاون بين اليونسكو (UNESCO) والأكاديمية المهنية للمعلمين.</li>
+                        </ul>
+                        <div class="mt-4 p-3 bg-blue-50/50 rounded-lg border border-blue-100">
+                            <span class="font-bold text-primary block mb-2 flex items-center gap-2"><i class="fas fa-globe text-secondary"></i> مشاركات في ورش عمل دولية ممثلاً للأكاديمية:</span>
+                            <div class="flex flex-col gap-2 text-sm text-slate-700">
+                                <span class="flex items-center gap-2"><i class="fas fa-certificate text-accent"></i> منظمة الأمم المتحدة للتربية والعلم والثقافة (UNESCO)</span>
+                                <span class="flex items-center gap-2"><i class="fas fa-certificate text-accent"></i> الوكالة الأمريكية للتنمية الدولية (USAID)</span>
+                                <span class="flex items-center gap-2"><i class="fas fa-certificate text-accent"></i> أكاديمية الملكة رانيا لتدريب المعلمين (QRTA)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 7 (New) -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-lg transition-shadow duration-300 group md:col-span-2 lg:col-span-1">
+                    <button class="w-full text-right px-6 py-5 flex justify-between items-center focus:outline-none bg-slate-50 group-hover:bg-blue-50 transition-colors" onclick="toggleAccordion('content-7', 'icon-7')">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-lg font-bold text-lg shadow-inner shrink-0">07</div>
+                            <div class="text-right">
+                                <h3 class="font-bold text-xl text-slate-800 group-hover:text-primary transition-colors">صانع محتوى تعليمي</h3>
+                                <span class="inline-block mt-1 bg-secondary/10 text-secondary text-xs px-2 py-1 rounded-full font-bold">2014 - حتى الآن</span>
+                            </div>
+                        </div>
+                        <i id="icon-7" class="fas fa-chevron-down text-slate-400 transition-transform duration-300 ease-in-out"></i>
+                    </button>
+                    <div id="content-7" class="accordion-content bg-white px-6">
+                        <ul class="list-none space-y-3 pt-2 text-slate-600">
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> صناعة وإنتاج محتوى رقمي تعليمي متخصص عبر اليوتيوب والمنصات التعليمية.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> تقديم شروحات لأحدث التقنيات وأدوات الذكاء الاصطناعي في التعليم.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check-circle text-secondary mt-1"></i> نشر الوعي بالتكنولوجيا التعليمية (EdTech) وتطوير مهارات المعلمين الرقمية.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Grid for Details: Education & Tools -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            
+            <!-- Education & Research -->
+            <section class="lg:col-span-1 bg-white rounded-2xl shadow-md p-6 border-t-4 border-primary">
+                <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                    <i class="fas fa-graduation-cap text-secondary"></i> التعليم والبحث
+                </h2>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-start mb-2 gap-2">
+                            <h3 class="font-bold text-lg text-slate-800">باحث ماجستير في علوم الملكية الفكرية وإدارة الإبداع</h3>
+                            <span class="inline-block bg-secondary/10 text-secondary text-[11px] px-2 py-1 rounded-full font-bold whitespace-nowrap mt-1">2023 - حتى الآن</span>
+                        </div>
+                        <p class="text-slate-500 text-sm mb-2">المعهد القومي للملكية الفكرية | جامعة العاصمة </p>
+                        
+                        <ul class="list-disc list-inside text-sm text-slate-600 space-y-1 mt-2 mb-4">
+                            <li><span class="font-semibold text-slate-700">التخصص:</span> ربط بين التربية والاقتصاد والقانون.</li>
+                        </ul>
+                        
+                        <!-- تفاصيل الرسالة -->
+                        <div class="bg-blue-50/50 p-4 rounded-lg border border-blue-100 mb-4 shadow-sm">
+                            <h4 class="font-bold text-primary text-sm mb-1"><i class="fas fa-scroll text-secondary ml-1"></i> عنوان الرسالة:</h4>
+                            <p class="text-sm text-slate-800 font-bold leading-relaxed">"الأهمية الاقتصادية للملكية الفكرية في التعليم قبل الجامعي"</p>
+                            <div class="mt-3 text-xs text-slate-600 flex flex-col gap-1.5">
+                                <span class="flex items-center gap-2"><i class="fas fa-info-circle text-accent"></i> <strong>الحالة:</strong> قيد الدراسة</span>
+                                <span class="flex items-center gap-2"><i class="fas fa-hashtag text-secondary"></i> <strong>رقم الرسالة:</strong> 9292329 (موقع اتحاد مكتبات الجامعات المصرية)</span>
+                            </div>
+                        </div>
+
+                        <!-- المقررات (بتصميم أكورديون فرعي لعدم إطالة الكارت) -->
+                        <div class="border border-slate-200 rounded-lg overflow-hidden mt-2">
+                            <button class="w-full text-right px-4 py-3 bg-slate-50 hover:bg-slate-100 transition-colors flex justify-between items-center text-sm font-bold text-primary focus:outline-none" onclick="toggleAccordion('courses-content', 'courses-icon')">
+                                <span class="flex items-center gap-2"><i class="fas fa-book-open text-secondary"></i> المقررات الدراسية المجتازة</span>
+                                <i id="courses-icon" class="fas fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                            </button>
+                            <div id="courses-content" class="accordion-content bg-white px-4">
+                                <div class="py-4 space-y-4">
+                                    <div>
+                                        <h5 class="text-xs font-bold text-slate-800 mb-2 border-b border-slate-100 pb-1">المقررات الأساسية (الساعات المعتمدة):</h5>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">براءات الاختراع <span class="text-secondary font-bold text-[10px]">(4 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">مناهج البحث <span class="text-secondary font-bold text-[10px]">(4 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">حق المؤلف <span class="text-secondary font-bold text-[10px]">(4 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">القانون الدولى <span class="text-secondary font-bold text-[10px]">(3 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">التصميمات الصناعية <span class="text-secondary font-bold text-[10px]">(3 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">المشروعات الصغيرة <span class="text-secondary font-bold text-[10px]">(3 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">عقود الاستغلال <span class="text-secondary font-bold text-[10px]">(3 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">النظرية الاقتصادية <span class="text-secondary font-bold text-[10px]">(3 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">تقييم الأصول <span class="text-secondary font-bold text-[10px]">(3 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">العلامات التجارية <span class="text-secondary font-bold text-[10px]">(3 س)</span></span>
+                                            <span class="bg-white text-slate-700 px-2 py-1 rounded text-xs border border-slate-200 shadow-sm">الوسائل الودية <span class="text-secondary font-bold text-[10px]">(3 س)</span></span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-xs font-bold text-slate-800 mb-2 border-b border-slate-100 pb-1">المقررات التكميلية:</h5>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="bg-emerald-50 text-emerald-700 px-2 py-1 rounded text-xs border border-emerald-100">مبادئ القانون</span>
+                                            <span class="bg-emerald-50 text-emerald-700 px-2 py-1 rounded text-xs border border-emerald-100">مبادئ الاقتصاد</span>
+                                            <span class="bg-emerald-50 text-emerald-700 px-2 py-1 rounded text-xs border border-emerald-100">مبادئ القانون التجاري</span>
+                                            <span class="bg-emerald-50 text-emerald-700 px-2 py-1 rounded text-xs border border-emerald-100">نظرية العقد</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pt-4 border-t border-slate-100">
+                        <h3 class="font-bold text-md text-slate-800 mb-3">الأبحاث العلمية:</h3>
+                        <ul class="space-y-4 text-sm text-slate-600">
+                            <li class="bg-slate-50 p-3 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                                <div class="flex items-start gap-2 mb-2">
+                                    <i class="fas fa-book-open text-accent mt-1"></i>
+                                    <div>
+                                        <strong class="text-slate-800 block mb-1">بحث منشور (2025):</strong>
+                                        <p class="font-semibold text-primary leading-relaxed">"دور النظام القانوني لحماية التصميمات الصناعية في التنمية المستدامة"</p>
+                                    </div>
+                                </div>
+                                <a href="https://doi.org/10.21608/jipim.2025.426189" target="_blank" class="inline-flex items-center gap-1 text-xs text-sky-700 hover:text-white hover:bg-sky-600 bg-sky-100 px-3 py-1.5 rounded-full border border-sky-200 transition-colors mr-5 font-bold">
+                                    <i class="fas fa-link"></i> رابط النشر (DOI)
+                                </a>
+                            </li>
+                            <li class="bg-slate-50 p-3 rounded-lg border border-slate-200 hover:shadow-md transition-shadow">
+                                <div class="flex items-start gap-2">
+                                    <i class="fas fa-spinner text-secondary mt-1 animate-spin-slow"></i>
+                                    <div>
+                                        <strong class="text-slate-800 block mb-1">بحث تم تحكيمه بمؤتمر وجاري النشر (2026):</strong>
+                                        <p class="font-semibold text-primary leading-relaxed">"أثر الذكاء الاصطناعي على عوائد حقوق الأداء العلني للطالب الفنان عبر الإنترنت <span class="text-xs text-slate-500 font-normal">(مستل من الرسالة)</span>"</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications & PD -->
+            <section class="lg:col-span-1 bg-white rounded-2xl shadow-md p-6 border-t-4 border-secondary">
+                <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                    <i class="fas fa-certificate text-accent"></i> التنمية المهنية
+                </h2>
+                <ul class="space-y-3 text-sm text-slate-700">
+                    <li class="flex items-start gap-2 p-2 hover:bg-slate-50 rounded transition-colors"><i class="fas fa-award text-secondary mt-1"></i> Microsoft Certified Educator (MCE) – 2016</li>
+                    <li class="flex items-start gap-2 p-2 hover:bg-slate-50 rounded transition-colors"><i class="fas fa-award text-secondary mt-1"></i> تصميم أنشطة التعلم في القرن 21 – 2019</li>
+                    <li class="flex items-start gap-2 p-2 hover:bg-slate-50 rounded transition-colors"><i class="fas fa-award text-secondary mt-1"></i> دمج التكنولوجيا في التدريس (CT 2017)</li>
+                    <li class="flex items-start gap-2 p-2 hover:bg-slate-50 rounded transition-colors"><i class="fas fa-award text-secondary mt-1"></i> برنامج تدريب المدربين (TOT) – 2022</li>
+                    <li class="flex items-start gap-2 p-2 hover:bg-slate-50 rounded transition-colors"><i class="fas fa-award text-secondary mt-1"></i> التعلم القائم على المشروعات (PBL)</li>
+                    <li class="flex items-start gap-2 p-2 hover:bg-slate-50 rounded transition-colors"><i class="fas fa-award text-secondary mt-1"></i> التفكير النقدي باستخدام البيانات</li>
+                    <li class="flex items-start gap-2 p-2 hover:bg-slate-50 rounded transition-colors"><i class="fas fa-award text-secondary mt-1"></i> Office 365 Teacher Academy</li>
+                    <li class="flex items-start gap-2 p-2 hover:bg-slate-50 rounded transition-colors"><i class="fas fa-award text-secondary mt-1"></i> Innovative Educator Experts</li>
+                    <li class="flex items-start gap-2 p-2 hover:bg-slate-50 rounded transition-colors"><i class="fas fa-award text-secondary mt-1"></i> التعلم الصلد للمستقبل 2htel (160 ساعة عبر الإنترنت)</li>
+                </ul>
+            </section>
+
+            <!-- Tools & Tech -->
+            <section class="lg:col-span-1 bg-white rounded-2xl shadow-md p-6 border-t-4 border-accent">
+                <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                    <i class="fas fa-laptop-code text-secondary"></i> أدوات وتقنيات
+                </h2>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-blue-100 hover:bg-blue-100 cursor-default transition-colors">Lectora Inspire</span>
+                    <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-blue-100 hover:bg-blue-100 cursor-default transition-colors">Articulate 360 / Storyline</span>
+                    <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-blue-100 hover:bg-blue-100 cursor-default transition-colors">Adobe Captivate</span>
+                    <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-blue-100 hover:bg-blue-100 cursor-default transition-colors">ISpring Suite</span>
+                    <span class="bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-indigo-100 hover:bg-indigo-100 cursor-default transition-colors">Camtasia</span>
+                    <span class="bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-indigo-100 hover:bg-indigo-100 cursor-default transition-colors">Prezi</span>
+                    <span class="bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-indigo-100 hover:bg-indigo-100 cursor-default transition-colors">Microsoft Teams / OneNote</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 hover:bg-slate-200 cursor-default transition-colors">Smart Board / ActiveInspire</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 hover:bg-slate-200 cursor-default transition-colors">Kahoot / Padlet</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 hover:bg-slate-200 cursor-default transition-colors">Google Tools</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 hover:bg-slate-200 cursor-default transition-colors">AVS Video Editor</span>
+                    <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full text-xs font-semibold border border-slate-200 hover:bg-slate-200 cursor-default transition-colors">Wondershare</span>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Achievements Footer Section -->
+        <section class="bg-primary text-white rounded-2xl shadow-xl overflow-hidden relative">
+            <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+            <div class="p-8 relative z-10">
+                <h2 class="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-3">
+                    <i class="fas fa-trophy text-accent"></i> أبرز إنجازاتي
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    <div class="p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-colors">
+                        <i class="fas fa-project-diagram text-3xl text-secondary mb-3"></i>
+                        <p class="font-semibold text-lg">تصميم وتطوير</p>
+                        <p class="text-sm text-sky-200 mt-1">عشرات البرامج التدريبية</p>
+                    </div>
+                    <div class="p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-colors">
+                        <i class="fas fa-photo-video text-3xl text-secondary mb-3"></i>
+                        <p class="font-semibold text-lg">إنتاج محتوى رقمي</p>
+                        <p class="text-sm text-sky-200 mt-1">تفاعلي متاح عبر الإنترنت</p>
+                    </div>
+                    <div class="p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-colors">
+                        <i class="fas fa-users text-3xl text-secondary mb-3"></i>
+                        <p class="font-semibold text-lg">تدريب شامل</p>
+                        <p class="text-sm text-sky-200 mt-1">لآلاف المعلمين والطلاب</p>
+                    </div>
+                    <div class="p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-colors">
+                        <i class="fas fa-globe text-3xl text-secondary mb-3"></i>
+                        <p class="font-semibold text-lg">محاضرات وورش عمل</p>
+                        <p class="text-sm text-sky-200 mt-1">محلية، إقليمية، ودولية</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-around gap-4 text-center text-sm">
+                    <div>
+                        <span class="block font-bold text-accent mb-1">سفير تغيير</span>
+                        Discovery Education (نظام 2.8)
+                    </div>
+                    <div>
+                        <span class="block font-bold text-accent mb-1">مدرب معتمد دولي</span>
+                        Microsoft - Intel
+                    </div>
+                    <div>
+                        <span class="block font-bold text-accent mb-1">محاضر زائر</span>
+                        كلية التربية – جامعة الإسكندرية
+                    </div>
+                    <div>
+                        <span class="block font-bold text-accent mb-1">صانع محتوى</span>
+                        تعليمي على يوتيوب والمنصات
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Data Footer -->
+        <footer class="mt-12 text-center text-slate-500 text-sm">
+            <div class="flex flex-wrap justify-center gap-4 mb-4">
+                <span class="bg-slate-200 px-3 py-1 rounded-full text-slate-700">تاريخ الميلاد: 19 / 6 / 19XX</span>
+                <span class="bg-slate-200 px-3 py-1 rounded-full text-slate-700">الحالة الاجتماعية: متزوج ويعول طفلين</span>
+                <span class="bg-slate-200 px-3 py-1 rounded-full text-slate-700">العربية (اللغة الأم) | الإنجليزية (متقدم ★★★★)</span>
+            </div>
+            <p>تم تصميم هذه السيرة الذاتية التفاعلية برمجياً © 2026</p>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript for Accordions -->
+    <script>
+        function toggleAccordion(contentId, iconId) {
+            const content = document.getElementById(contentId);
+            const icon = document.getElementById(iconId);
+            
+            // Check if currently open
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                // Close it
+                content.style.maxHeight = '0px';
+                // Delay padding removal to keep animation smooth
+                setTimeout(() => {
+                    content.style.paddingTop = '0px';
+                    content.style.paddingBottom = '0px';
+                }, 50); 
+                icon.classList.remove('rotate-180');
+            } else {
+                // Open it
+                content.style.paddingTop = '0.5rem';
+                content.style.paddingBottom = '1.5rem';
+                // Set max height dynamically based on scrollHeight + padding
+                content.style.maxHeight = content.scrollHeight + 40 + "px";
+                icon.classList.add('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
